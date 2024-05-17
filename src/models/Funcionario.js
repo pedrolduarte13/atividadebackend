@@ -5,17 +5,17 @@ const schema = new mongoose.Schema({
         type: String,
         required: true
     },
-    descricao: {
-        type: String,
+    idade: {
+        type: Number,
         required: false
     },
-    salario: {
-        type: Number,
+    funcao: {
+        type: String,
         required: false
     }
 }, {timestamps: true})
 
-const Cargo = mongoose.model('cargo', schema)
+const Funcionario = mongoose.model('funcionario', schema)
 
-module.exports = Cargo
+module.exports = Funcionario
 
