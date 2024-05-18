@@ -7,11 +7,11 @@ const schema = new mongoose.Schema({
     },
     idade: {
         type: Number,
-        required: false
+        required: true
     },
     funcao: {
         type: String,
-        required: false
+        required: true
     }
 }, {timestamps: true})
 
