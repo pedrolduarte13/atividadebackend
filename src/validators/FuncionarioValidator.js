@@ -6,9 +6,11 @@ const schema = yup.object().shape(
             .string("Campo nome precisa ser um texto")
             .required("Campo nome é obrigatório"),
         idade: yup
-            .number("Campo descricao precisa ser um numero"),
+            .number("Campo descricao precisa ser um numero")
+            .required("Campo idade é obrigatório"),
         funcao: yup
             .string("Campo descricao precisa ser um texto")
+            .required("Campo funcao é obrigatório"),
     }
 )
 
