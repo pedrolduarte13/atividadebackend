@@ -7,6 +7,7 @@ const schema = yup.object().shape(
             .required("Campo nome é obrigatório"),
         descricao: yup
             .string("Campo descricao precisa ser um texto")
+            .required("Campo descricao é obrigatório"),
     }
 )
 
