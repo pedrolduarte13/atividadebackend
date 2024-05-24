@@ -1,15 +1,20 @@
 const express = require('express')
 const router = express.Router()
 
+// controllers
 const CargoController = require('../controllers/CargoController')
-const FuncionarioController = require('../controllers/FuncionarioController')
 const DepartamentoController = require('../controllers/DepartamentoController')
+const FuncionarioController = require('../controllers/FuncionarioController')
+const ProjetoController = require('../controllers/ProjetoController')
+const TarefaController = require('../controllers/TarefaController')
 
 // validators
-const { validarID } = require('../validators/idValidator')
+const { validarID } = require('../validators/IdValidator')
 const { validarCargo } = require('../validators/CargoValidator')
-const { validarFuncionario } = require('../validators/FuncionarioValidator')
 const { validarDepartamento } = require('../validators/DepartamentoValidator')
+const { validarFuncionario } = require('../validators/FuncionarioValidator')
+const { projetoValidador } = require('../validators/ProjetoValidator')
+const { tarefaValidador } = require('../validators/TarefaValidator')
 
 // Cargo
 router.post('/cargos', validarCargo, CargoController.criar)
