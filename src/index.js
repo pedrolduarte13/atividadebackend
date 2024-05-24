@@ -7,9 +7,11 @@ DBconnect()
 
 app.use(express.json())
 
+const autenticacaoRoutes = require('./routes/autenticacao.routes')
+app.use(autenticacaoRoutes)
+
 const routes = require('./routes/routes')
 app.use(routes)
-
 
 app.listen(PORT, () => {
     console.log(`Aplicação rodando na porta ${PORT}`)
