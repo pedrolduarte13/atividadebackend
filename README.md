@@ -2,3 +2,4 @@
 
 - Exercício CRUD Funcionarios | **CONCLUIDA**
 - Exercicio CRUD Departamentos | **CONCLUIDA**
+- Exercicio CRUD Tarefa e Projeto | **CONCLUIDA**
